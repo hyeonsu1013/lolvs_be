@@ -124,7 +124,7 @@ public class ModelUtils {
 
 //        boolean hasTimestamp = timestampList.isPresent();
 
-        importList.add("import com.dunsum.backend.common.vo.BaseVO;");
+        importList.add("import com.housney.lolvs.common.vo.BaseVO;");
         importList.add("import io.swagger.annotations.ApiModel;");
         importList.add("import io.swagger.annotations.ApiModelProperty;");
         importList.add("import lombok.*;");

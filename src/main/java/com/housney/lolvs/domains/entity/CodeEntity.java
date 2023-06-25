@@ -1,6 +1,6 @@
 package com.housney.lolvs.domains.entity;
 
-import com.dunsum.backend.common.vo.BaseVO;
+import com.housney.lolvs.common.vo.BaseVO;
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
