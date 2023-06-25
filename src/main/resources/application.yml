@@ -1,0 +1,46 @@
+project.name: lolvs
+
+# ?? ?? ?? import
+spring:
+  config:
+    import: classpath:secretApplication.yml
+
+mybatis:
+  mapper-locations: classpath:/mapper/**/*.xml
+  configuration:
+    map-underscore-to-camel-case: true
+    lazy-loading-enabled: true
+    aggressive-lazy-loading: false
+    jdbc-type-for-null: VARCHAR
+    call-setters-on-nulls: true
+    return-instance-for-empty-row: true
+
+# TODO local, dev(real) ??
+# spring.profiles: local > deprecated ??? ??
+
+server.port: 9090
+
+api:
+  timeout: 60000
+
+logging:
+  level:
+    jdbc:
+      sqlonly: info
+      sqltiming: info
+      resultsettable: info
+      audit: off
+      resultset: off
+      connection: off
+
+#batch:
+#  active.host : "127.0.0.1"
+#  cronData:
+#    delLog:
+#      use: true
+#      cron: "0 0 0 1 */3 *"
+#      cron-chk: "0 10 0 1 */3 *"
+#    dnfServer:
+#      use : true
+#      cron : "0 0 * * * *"
+#      cron-chk : "0 5 * * * *"
