@@ -1,7 +1,9 @@
-package com.housney.lolvs.domains.aroot;
+package com.housney.lolvs.domains.aroot.controller;
 
 import com.housney.lolvs.common.utils.ModelUtils;
 import com.housney.lolvs.common.vo.BaseVO;
+import com.housney.lolvs.domains.aroot.model.CodeSrchModel;
+import com.housney.lolvs.domains.entity.CodeEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;
@@ -9,6 +11,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
+
+import java.util.List;
 
 @RequestMapping("/${project.name}/api/root")
 @RestController
@@ -24,4 +28,9 @@ public class ArootRestContoller {
         modelUtils.createEntity();
     }
 
+    @ApiOperation(value = "공통코드 조회", notes = "")
+    @RequestMapping(value = "/sel/code", method = RequestMethod.POST)
+    public List<CodeEntity> selCode(@RequestBody CodeSrchModel srchModel) throws Exception {
+        return null;
+    }
 }
