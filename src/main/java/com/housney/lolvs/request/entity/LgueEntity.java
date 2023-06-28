@@ -1,4 +1,4 @@
-package com.housney.lolvs.domains.entity;
+package com.housney.lolvs.request.entity;
 
 import com.housney.lolvs.common.vo.BaseVO;
 import io.swagger.annotations.ApiModel;

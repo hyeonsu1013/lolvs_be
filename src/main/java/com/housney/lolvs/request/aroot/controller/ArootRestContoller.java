@@ -1,9 +1,9 @@
-package com.housney.lolvs.domains.aroot.controller;
+package com.housney.lolvs.request.aroot.controller;
 
 import com.housney.lolvs.common.utils.ModelUtils;
 import com.housney.lolvs.common.vo.BaseVO;
-import com.housney.lolvs.domains.aroot.model.CodeSrchModel;
-import com.housney.lolvs.domains.entity.CodeEntity;
+import com.housney.lolvs.request.aroot.model.CodeSrchModel;
+import com.housney.lolvs.request.entity.CodeEntity;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.RequiredArgsConstructor;

@@ -1,4 +1,4 @@
-package com.housney.lolvs.domains.aroot.model;
+package com.housney.lolvs.request.aroot.model;
 
 import com.housney.lolvs.common.vo.SrchVO;
 import io.swagger.annotations.ApiModelProperty;
